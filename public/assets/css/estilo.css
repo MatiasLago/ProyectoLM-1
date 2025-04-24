@@ -1,0 +1,211 @@
+/* ============ VARIABLES Y RESET ============ */
+:root {
+  --primary: #3a7ea8;
+  --secondary: #2ecc71;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 4px rgba(20, 4, 4, 0.438);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 20px rgba(0,0,0,0.15);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ TIPOGRAFÍA Y BASE ============ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-size: 2.5rem; margin: 1rem 0; }
+h2 { font-size: 2rem; margin: 0.8rem 0; }
+h1, h2 { font-weight: 700; }
+header {
+  background-color: var(--dark);
+ 
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+} 
+/* ============ COMPONENTES REUTILIZABLES ============ */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow-md);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============ LAYOUT ============ */
+.container-section {
+  margin-bottom: 3rem;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  min-height: 80px;
+  transition: var(--transition);
+  background-color: var(--dark);
+  box-shadow: var(--shadow-lg);
+}
+
+.navbar-brand {
+  transition: var(--transition);
+}
+.navbar-brand img {
+  height: 40px;
+  transition: var(--transition);
+}
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: var(--light);
+  transition: var(--transition);
+  font-size: 1.1rem;
+}
+.nav-link:hover {
+  color: var(--white);
+  transform: translateY(-3px);
+}
+.nav-link.active {
+  color: var(--white);
+  font-weight: 500;
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: var(--white);
+  border-radius: 3px;
+}
+
+/* ============ HERO SECTION ============ */
+.hero {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 8px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: var(--dark);
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* ============ CARRUSEL ============ */
+
+.carousel-item img {
+  max-height: 500px; /* Define la altura máxima deseada (ej: 500px) */
+  width: auto;       /* Permitir que el ancho se ajuste automáticamente */
+  margin: 0 auto;    /* Centrar la imagen horizontalmente si es más estrecha */
+  display: block;    /* Necesario para que el margen auto funcione */
+  object-fit: contain; /* O 'cover', según prefieras cómo se ajusta */
+}
+
+/* ============ MEDIA QUERIES ============ */
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 70px;
+  }
+  .navbar-brand img {
+    height: 35px;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Asegura que no haya margen/padding no deseado */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* Navbar fijo en la parte superior */
+.navbar {
+  position: fixed; /* Hace que el navbar sea fijo */
+  top: 0;         /* Lo pega al borde superior */
+  left: 0;        /* Lo pega al borde izquierdo */
+  width: 100%;    /* Ocupa todo el ancho */
+  z-index: 1030;  /* Asegura que esté sobre otros elementos */
+}
+
+/* Ajusta el padding del body para compensar el navbar fijo */
+body {
+  padding-top: 90px; /* Igual a la altura de tu navbar */
+}
