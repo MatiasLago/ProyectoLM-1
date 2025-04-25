@@ -14,6 +14,7 @@
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
         <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+        <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="2" aria-label="Imagen 3"></button>
         </div>
 
     <div class="carousel-inner">

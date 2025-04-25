@@ -10,7 +10,7 @@
             <div class="mx-auto">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active fs-4 fw-semibold" href="<?php echo base_url('inicio');?>">Inicio</a>
+                        <a class="nav-link active fs-4 fw-semibold" href="<?php echo base_url('principal');?>">Inicio</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link fs-4 fw-semibold" href="<?php echo base_url('nosotros');?>">Nosotros</a>
