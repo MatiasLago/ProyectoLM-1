@@ -1,6 +1,7 @@
 <?= $this->extend('layouts/plantilla') ?>
 
 <?= $this->section('content') ?>
+
 <section class="hero-section mb-5">
     <div class="hero-image"></div>
     <div class="hero-text text-center">
@@ -10,46 +11,23 @@
 </section>
 
 <div id="miCarruselPrincipal" class="carousel slide" data-bs-ride="carousel">
-
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
         <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="1" aria-label="Imagen 2"></button>
         <button type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide-to="2" aria-label="Imagen 3"></button>
-        </div>
+    </div>
 
     <div class="carousel-inner">
-
         <div class="carousel-item active">
             <img src="<?= base_url('assets/img/panel2.jpg') ?>" class="d-block w-100" alt="Panel Calefon">
-            <?php /* Opcional: Puedes añadir un título y descripción
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Título Panel Calefon</h5>
-                <p>Descripción si es necesaria.</p>
-            </div>
-            */ ?>
         </div>
-
         <div class="carousel-item">
             <img src="<?= base_url('assets/img/panel.jpg') ?>" class="d-block w-100" alt="Panel Electrico">
-            <?php /* Opcional: Puedes añadir un título y descripción
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Título Panel Eléctrico</h5>
-                <p>Otra descripción.</p>
-            </div>
-            */ ?>
         </div>
-
         <div class="carousel-item">
             <img src="<?= base_url('assets/img/logo.png') ?>" class="d-block w-100" alt="Logo empresa">
-            <?php /* Opcional: Puedes añadir un título y descripción
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Título Panel Eléctrico</h5>
-                <p>Otra descripción.</p>
-            </div>
-            */ ?>
         </div>
-
-        </div>
+    </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#miCarruselPrincipal" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,26 +37,27 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Siguiente</span>
     </button>
-
 </div>
 
-
-<div class="row">
-    <article class="col-md-6 mb-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title">Nuestra Misión</h2>
-                <p class="card-text">Somos una empresa dedicada a ofrecer soluciones innovadoras con materiales de primera calidad.</p>
+<div class="container mt-5">
+    <div class="row">
+        <article class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Nuestra Misión</h2>
+                    <p class="card-text">Somos una empresa dedicada a ofrecer soluciones innovadoras con materiales de primera calidad.</p>
+                </div>
             </div>
-        </div>
-    </article>
-    <article class="col-md-6 mb-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h2 class="card-title">Nuestros Valores</h2>
-                <p class="card-text">Calidad, innovación y servicio al cliente son nuestros pilares fundamentales.</p>
+        </article>
+        <article class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Nuestros Valores</h2>
+                    <p class="card-text">Calidad, innovación y servicio al cliente son nuestros pilares fundamentales.</p>
+                </div>
             </div>
-        </div>
-    </article>
+        </article>
+    </div>
 </div>
+
 <?= $this->endSection() ?>

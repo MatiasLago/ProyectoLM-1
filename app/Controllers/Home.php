@@ -1,14 +1,21 @@
-<?php // Ubicación: app/Controllers/Home.php
+<?php
 
 namespace App\Controllers;
 
 class Home extends BaseController
 {
-   public function index()
-   {
-      $data['titulo']='principal';
-      echo view('pages/principal', $data);
-      echo view('pages/nosotros');
-      echo view('pages/contacto');
-   }
+    public function principal()
+    {
+        return view('pages/principal');
+    }
+
+    public function contacto()
+    {
+        return view('pages/contacto');
+    }
+
+    public function nosotros()
+    {
+        return view('pages/nosotros');
+    }
 }

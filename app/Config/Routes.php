@@ -1,11 +1,21 @@
 <?php
 
+namespace Config;
+
+$routes = Services::routes();
+
+$routes->setDefaultNamespace('App\Controllers');
+$routes->setDefaultController('Home');
+$routes->setDefaultMethod('index');
+$routes->setTranslateURIDashes(false);
+
+
 use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('/principal', 'Home::prncipal');
-$routes->get('/nosotros', 'Home::nosotros');
-$routes->get('/contacto', 'Home::contacto');
+$routes->get('/', 'Home::principal');      // La raíz ("/") carga principal
+$routes->get('principal', 'Home::principal');
+$routes->get('contacto', 'Home::contacto');
+$routes->get('nosotros', 'Home::nosotros');
