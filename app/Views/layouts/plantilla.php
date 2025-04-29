@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $this->renderSection('titulo') ?> | SolarCtes</title>
+    <title><?= $this->renderSection('titulo') ?> | Zenith Energia</title>
 
     <!-- Bootstrap CSS -->
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">

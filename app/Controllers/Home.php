@@ -14,13 +14,25 @@ class Home extends BaseController
         return view('pages/nosotros');
     }
 
-    public function productos()
+   /* public function productos()
     {
         return view('pages/productos');
     }
+        */
 
     public function contacto()
     {
         return view('pages/contacto');
     }
+
+    public function comercializacion()
+    {
+        return view('pages/comercializacion');
+    }
+
+    public function terminos()
+    {
+        return view('pages/terminos');
+    }
+
 }

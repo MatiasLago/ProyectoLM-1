@@ -7,7 +7,7 @@
     <hr>
 
     <p class="lead mb-4">
-        Conoce más sobre nuestra historia, misión y el equipo detrás de SolarCtes.
+        Conoce más sobre nuestra historia, misión y el equipo detrás de Zenith Energia.
     </p>
 
     <div class="row g-4">
