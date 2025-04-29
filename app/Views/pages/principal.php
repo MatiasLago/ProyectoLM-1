@@ -1,5 +1,9 @@
 <?= $this->extend('layouts/plantilla') ?>
 
+<?= $this->section('titulo') ?>
+Inicio
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
 <section class="hero-section mb-5">

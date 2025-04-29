@@ -17,5 +17,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::principal');      // La raíz ("/") carga principal
 $routes->get('principal', 'Home::principal');
-$routes->get('contacto', 'Home::contacto');
+$routes->get('productos', 'Home::productos');
 $routes->get('nosotros', 'Home::nosotros');
+$routes->get('contacto', 'Home::contacto');
+

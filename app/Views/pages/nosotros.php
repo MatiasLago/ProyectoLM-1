@@ -15,37 +15,30 @@
         <div class="col-md-7">
             <h2>Nuestra Historia</h2>
             <p>
-                Aquí puedes escribir un par de párrafos sobre cómo comenzó la empresa, 
-                sus motivaciones, hitos importantes, etc. Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Nuestra empresa nació en el año 2025 con el propósito de brindar soluciones energéticas sostenibles que respondan a los desafíos ambientales y económicos de hoy.
             </p>
             <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                aliquip ex ea commodo consequat.
+            Fundada por un equipo comprometido con la innovación y el desarrollo sustentable, surgimos con la visión de hacer accesible la energía solar y renovable a hogares, negocios y comunidades.
             </p>
-
+            <p>
+            Desde nuestros inicios, trabajamos con tecnología de vanguardia y un firme compromiso con la calidad, el ahorro energético y el cuidado del planeta.
+            </p>
             <h2 class="mt-4">Misión y Visión</h2>
             <p>
-                <strong>Misión:</strong> [Describe aquí tu misión de forma concisa].
+                <strong>Misión:</strong> Ofrecer soluciones integrales en energía solar y renovable, mediante la venta de equipos de alta eficiencia, asesoría técnica personalizada y servicio postventa, con el fin de satisfacer las necesidades energéticas de nuestros clientes de manera sostenible, accesible y responsable con el medio ambiente.
             </p>
             <p>
-                <strong>Visión:</strong> [Describe aquí tu visión a futuro].
+                <strong>Visión:</strong> Ser una empresa líder en el mercado nacional e internacional de energía renovable, reconocida por su innovación, compromiso ambiental y excelencia en el servicio, contribuyendo activamente a la transición hacia un futuro energético limpio y sostenible.
             </p>
         </div>
-
-        <div class="col-md-5">
-            <div class="card mb-3">
-                <img src="<?= base_url('assets/img/imagen_nosotros.jpg') ?>" class="card-img-top" alt="Imagen representativa">
-                <div class="card-body">
-                    <h5 class="card-title">Compromiso</h5>
-                    <p class="card-text">Estamos comprometidos con la calidad y la sostenibilidad.</p>
-                </div>
-            </div>
 
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Nuestro Equipo</h5>
-                    <p class="card-text">Contamos con profesionales apasionados por las energías renovables. [Puedes añadir más detalles o enlace a una sección de equipo].</p>
+                    <p class="card-text">Contamos con profesionales apasionados por las energías renovables.
+                    </p>
+                    <img src="<?= base_url('assets/img/Matias.jpg') ?>" class="card-img-top" alt="Lago Matias">
+                    <img src="<?= base_url('assets/img/Lucas.jpg') ?>" class="card-img-top" alt="Mancuello Lucas">
                 </div>
             </div>
         </div>

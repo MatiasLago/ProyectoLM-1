@@ -11,19 +11,16 @@
 <div class="row g-4">
     <div class="col-md-6">
         <h2>Información de Contacto</h2>
-        <p><strong>Email:</strong> <a href="mailto:solarCtes@gmail.com">solarCtes@gmail.com</a></p> 
-        <p><strong>Teléfono:</strong> +54 379 XXXXXXX</p>
-        <p><strong>Dirección:</strong> Tu Dirección, Corrientes, Argentina</p>
+        <p><strong>Email:</strong> <a href="mailto:solarCtes@gmail.com">ZenithEnergia@gmail.com</a></p> 
+        <p><strong>Teléfono:</strong> 3794000001 </p>
+        <p><strong>Dirección:</strong> 3 de Abril 420</p>
         <p><strong>Horario:</strong> Lunes a Viernes, 8:00 - 17:00 hs</p>
     </div>
 
     <div class="col-md-6">
         <h2>Formulario de Contacto</h2>
         <p>Envíanos tu consulta directamente:</p>
-
-        <form action="<?= site_url('ruta/para/enviar/contacto') ?>" method="post">
-            <?= csrf_field() ?>
-
+            
             <div class="mb-3">
                 <label for="formNombre" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="formNombre" name="nombre" required>

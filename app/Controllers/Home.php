@@ -9,13 +9,18 @@ class Home extends BaseController
         return view('pages/principal');
     }
 
-    public function contacto()
-    {
-        return view('pages/contacto');
-    }
-
     public function nosotros()
     {
         return view('pages/nosotros');
+    }
+
+    public function productos()
+    {
+        return view('pages/productos');
+    }
+
+    public function contacto()
+    {
+        return view('pages/contacto');
     }
 }
