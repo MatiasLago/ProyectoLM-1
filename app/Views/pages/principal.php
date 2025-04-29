@@ -7,7 +7,7 @@ Inicio
 <?= $this->section('content') ?>
 
 <section class="text-center bg-light p-5 rounded shadow-sm mb-5">
-    <h1 class="display-4 fw-bold">Bienvenidos a Zenith Energía</h1>
+    <h1 class="display-4 fw-bold">Bienvenido a Zenith Energía</h1>
     <p class="lead mt-3">Soluciones energéticas inteligentes para un futuro sustentable.</p>
     <p class="mt-4">
         En <strong>Zenith Energía</strong> nos especializamos en brindar tecnología solar y eficiencia energética para hogares, empresas e instituciones. 
