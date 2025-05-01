@@ -13,15 +13,17 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link active fs-4 fw-semibold" href="<?= base_url() ?>">Inicio</a>
                     </li>
-
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 fw-semibold" href="<?= base_url('nosotros') ?>">Nosotros</a>
+                        <a class="nav-link active fs-4 fw-semibold" href="<?= base_url('catalogo') ?>">Productos</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 fw-semibold" href="<?= base_url('contacto') ?>">Contacto</a>
+                        <a class="nav-link active fs-4 fw-semibold" href="<?= base_url('nosotros') ?>">Nosotros</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fs-4 fw-semibold" href="<?= base_url('comercializacion') ?>">Comercialización</a>
+                        <a class="nav-link active fs-4 fw-semibold" href="<?= base_url('contacto') ?>">Contacto</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active fs-4 fw-semibold" href="<?= base_url('comercializacion') ?>">Comercialización</a>
                     </li>
                 </ul>
             </div>

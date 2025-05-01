@@ -17,11 +17,12 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::principal');      // La raíz ("/") carga principal
 $routes->get('principal', 'Home::principal');
-//$routes->get('productos', 'Home::productos');
+$routes->get('catalogo', 'Home::catalogo');
 $routes->get('nosotros', 'Home::nosotros');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('terminos', 'Home::terminos');
+
 
 
 

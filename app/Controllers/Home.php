@@ -35,4 +35,8 @@ class Home extends BaseController
         return view('pages/terminos');
     }
 
+    public function catalogo(){
+        return view('pages/catalogo');
+    }
+
 }
