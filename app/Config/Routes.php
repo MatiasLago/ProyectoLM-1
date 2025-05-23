@@ -20,8 +20,13 @@ $routes->get('principal', 'Home::principal');
 $routes->get('catalogo', 'Home::catalogo');
 $routes->get('nosotros', 'Home::nosotros');
 $routes->get('contacto', 'Home::contacto');
+$routes->get('registrarse', 'Home::registrarse');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('terminos', 'Home::terminos');
+$routes->get('login', 'Home::login');
+$routes->post('login/verificar', 'Login::verificar');
+
+
 
 
 
