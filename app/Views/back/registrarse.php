@@ -14,10 +14,24 @@
                     <form action="<?= base_url('registro/guardar') ?>" method="post">
                         <?= csrf_field() ?>
 
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre completo</label>
-                            <input type="text" name="nombre" class="form-control" required>
-                        </div>
+                        <div class="card-body" media="(max-width:750px)">
+                         <label for="nombre">Nombre</label>
+                         <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        <!-- Validación -->
+                        <?php if ($validation->getError('nombre')) { ?>
+                            <div class='alert alert-danger mt-2'>
+                             <?= $error = $validation->getError('nombre'); ?>
+                            </div>
+                         <?php } ?>
+                         <div class="form-group">
+                             <label for="apellido">Apellido</label>
+                            <input type="text"  name="apellido" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+                         <!-- Validación -->
+                        <?php if ($validation->getError('apellido')) { ?>
+                             <div class='alert alert-danger mt-2'>
+                             <?= $error = $validation->getError('apellido'); ?>
+                            </div>
+                        <?php } ?>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
