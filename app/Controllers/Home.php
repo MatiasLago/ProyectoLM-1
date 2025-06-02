@@ -65,4 +65,10 @@ class Home extends BaseController
         }
     }
 
+        public function Perfil(){
+        $datos['header'] = view ('components/header');
+        $datos['footer'] = view ('components/footer');
+        
+        return view('Pages/perfil',$datos);
+    }
 }
